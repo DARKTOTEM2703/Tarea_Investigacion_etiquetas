@@ -1,6 +1,6 @@
 # Proyecto: Implementación de `<details>` y `<summary>`
 
-Este proyecto demuestra el uso de las etiquetas HTML `<details>` y `<summary>` para crear elementos interactivos que permiten mostrar u ocultar contenido de manera sencilla.
+Este proyecto demuestra el uso de las etiquetas HTML `<details>` y `<summary>` para crear elementos interactivos que permiten mostrar u ocultar contenido de manera sencilla. Estas etiquetas se han utilizado para mostrar las materias de cada semestre de la carrera de Ingeniería en Sistemas Computacionales.
 
 ---
 
@@ -37,86 +37,34 @@ Las etiquetas `<details>` y `<summary>` son elementos HTML interactivos que perm
 
 ## **Ejemplo práctico**
 
-A continuación, se presenta un ejemplo donde se implementan las etiquetas `<details>` y `<summary>` para mostrar información sobre diferentes temas:
+A continuación, se presenta un ejemplo basado en el proyecto actual, donde se implementan las etiquetas `<details>` y `<summary>` para mostrar las materias de cada semestre:
 
-### **Código HTML:**
+### **Fragmento del código HTML:**
 
 ```html
-<!DOCTYPE html>
-<html lang="es">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Ejemplo de Details y Summary</title>
-    <style>
-      body {
-        font-family: Arial, sans-serif;
-        margin: 20px;
-        background-color: #f9f9f9;
-        color: #333;
-      }
-
-      details {
-        margin-bottom: 15px;
-        border: 1px solid #ccc;
-        border-radius: 5px;
-        padding: 10px;
-        background-color: #fff;
-      }
-
-      summary {
-        font-weight: bold;
-        cursor: pointer;
-      }
-
-      summary:hover {
-        color: #007bff;
-      }
-
-      details[open] {
-        border-color: #007bff;
-      }
-
-      details ul {
-        list-style-type: disc;
-        padding-left: 20px;
-        margin: 10px 0;
-      }
-
-      details ul li {
-        margin-bottom: 5px;
-      }
-    </style>
-  </head>
-
-  <body>
-    <h1>Ejemplo de uso de las etiquetas &lt;details&gt; y &lt;summary&gt;</h1>
-
-    <details>
-      <summary>¿Qué es HTML?</summary>
-      <p>
-        HTML (HyperText Markup Language) es el lenguaje estándar para crear
-        páginas web. Se utiliza para estructurar el contenido de un sitio web.
-      </p>
-    </details>
-
-    <details>
-      <summary>¿Qué es CSS?</summary>
-      <p>
-        CSS (Cascading Style Sheets) es un lenguaje de diseño que se utiliza
-        para describir la presentación de un documento HTML, como colores,
-        fuentes y diseño.
-      </p>
-    </details>
-
-    <details open>
-      <summary>¿Qué es JavaScript?</summary>
-      <p>
-        JavaScript es un lenguaje de programación que permite agregar
-        interactividad a las páginas web, como animaciones, validaciones de
-        formularios y más.
-      </p>
-    </details>
-  </body>
-</html>
+<div class="semester">
+  <details>
+    <summary class="styled-summary">Materias del Semestre 1</summary>
+    <ul>
+      <li>Cálculo Diferencial</li>
+      <li>Fundamentos de Investigación</li>
+      <li>Química</li>
+      <li>Matemáticas Discretas</li>
+      <li>Taller de Administración</li>
+      <li>Fundamentos de Programación</li>
+    </ul>
+  </details>
+</div>
+<div class="semester">
+  <details>
+    <summary class="styled-summary">Materias del Semestre 2</summary>
+    <ul>
+      <li>Álgebra Lineal</li>
+      <li>Programación Orientada a Objetos</li>
+      <li>Física</li>
+      <li>Probabilidad y Estadística</li>
+      <li>Contabilidad</li>
+    </ul>
+  </details>
+</div>
 ```
